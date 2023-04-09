@@ -27,7 +27,7 @@ st.title('Time Series Fitting using Convex Optimization')
 model, rms = optimize()
 
 # Streamlit RMS value
-st.write(f'RMS: {rms}')
+st.write(f'RMS: {np.round(rms, 2)}')
 
 # Streamlit plot matplotlib pyplot
 st.pyplot(model.generate_plots())
